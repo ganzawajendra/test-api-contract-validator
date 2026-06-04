@@ -1,6 +1,6 @@
-# Project Smart Office - API Contract Guidelines
+# Project API Contract Guidelines
 
-Selamat datang di repositori dokumentasi kontrak API untuk pengembangan sistem Smart Office. Dokumen ini berfungsi sebagai acuan tunggal (single source of truth) bagi tim Backend dan Frontend dalam menyusun serta mengonsumsi data JSON.
+Selamat datang di repositori dokumentasi kontrak API. Dokumen ini berfungsi sebagai acuan tunggal (single source of truth) bagi tim Backend dan Frontend dalam menyusun serta mengonsumsi data JSON.
 
 ## Standar Response API Resmi
 
