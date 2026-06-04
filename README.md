@@ -1,10 +1,10 @@
-# Smart Office Application
+# API Contract Validator Application
 
-Aplikasi Smart Office ini dibangun menggunakan framework Flutter untuk sisi Mobile dan Laravel untuk sisi Backend API. Proyek ini bertujuan untuk memudahkan karyawan dalam melakukan booking ruang rapat secara mandiri.
+Aplikasi API ini dibangun menggunakan framework Flutter untuk sisi Mobile dan Laravel untuk sisi Backend API. Proyek ini bertujuan untuk memudahkan karyawan dalam melakukan booking ruang rapat secara mandiri.
 
 ## Fitur Utama
 * Autentikasi Pengguna (Login/Logout)
-* Reservasi Ruang Rapat secara Real-time
+* Membeli kebutuhan sehari-hari secara Real-time
 * Notifikasi Catering & Logistik
 * Riwayat Transaksi Pemesanan
 
