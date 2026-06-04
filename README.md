@@ -1,19 +1,32 @@
-# My Project API Documentation
+# Project Smart Office - API Contract Guidelines
 
-Ini adalah repositori untuk pengembangan backend aplikasi. Semua kontributor wajib mengikuti standar kontrak API yang ada di bawah ini.
+Selamat datang di repositori dokumentasi kontrak API untuk pengembangan sistem Smart Office. Dokumen ini berfungsi sebagai acuan tunggal (single source of truth) bagi tim Backend dan Frontend dalam menyusun serta mengonsumsi data JSON.
 
-## Standar Response API
+## Standar Response API Resmi
 
-Untuk menjaga konsistensi antara tim Backend dan Frontend, berikut adalah aturan struktur JSON Response:
+Semua endpoint API pada proyek ini wajib mengembalikan struktur data yang seragam sesuai dengan standarisasi internal berikut:
 
-1. **Naming Convention**: Semua key di dalam JSON wajib menggunakan format **snake_case** (contoh: `user_id`, `is_active`, `created_at`). Jangan gunakan camelCase.
-2. **Wajib Field**: Setiap response data harus dibungkus dalam objek utama yang memiliki field `message` (string) sebagai indikator status respons.
-3. **Format Tanggal**: Menggunakan format standar `YYYY-MM-DD`.
+### 1. Aturan Penamaan (Naming Convention)
+* **Format Key**: Semua nama field (*key*) di dalam JSON wajib menggunakan format **snake_case** (huruf kecil dengan pemisah garis bawah).
+* **Contoh Valid**: `user_id`, `room_name`, `booking_status`, `created_at`.
+* **Dilarang**: Menggunakan `camelCase` (`userId`) atau `PascalCase` (`UserId`).
 
-### Contoh JSON yang VALID:
+### 2. Struktur Objek Wajib (Mandatory Fields)
+Setiap response JSON yang dikembalikan dari server harus dibungkus dalam objek utama yang minimal memiliki 2 field berikut:
+1. `code` : Berisi tipe data *integer* (contoh: `200`, `400`, `500`) sebagai kode status HTTP.
+2. `data` : Berisi objek utama atau *array* tempat data aplikasi disimpan.
+
+---
+
+## Contoh JSON Response
+
+### 1. Contoh Standar JSON yang VALID (Sesuai Dokumentasi):
 ```json
 {
-  "message": "Success",
-  "user_id": 99,
-  "user_name": "Ganza Wajendra"
+  "code": 200,
+  "data": {
+    "booking_id": 105,
+    "room_name": "Ruang Meeting Utama",
+    "is_available": true
+  }
 }
